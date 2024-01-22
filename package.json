@@ -1,19 +1,18 @@
 {
-  "name": "@uniswap/governance",
-  "version": "1.0.2",
+  "name": "@gearbox-protocol/timelock",
+  "version": "0.0.0",
   "description": "🏛 Governance contracts for the Uniswap protocol",
   "author": "Noah Zinsmeister",
   "license": "MIT",
   "files": [
-    "build"
+    "contracts"
   ],
   "scripts": {
     "precompile": "rimraf ./build/",
     "compile": "waffle",
     "pretest": "yarn compile",
     "test": "mocha",
-    "lint": "prettier ./test/**/*.ts --check",
-    "prepublishOnly": "yarn test"
+    "lint": "prettier ./test/**/*.ts --check"
   },
   "devDependencies": {
     "@types/chai": "^4.2.12",
